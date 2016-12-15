@@ -1,3 +1,3 @@
 set(Hello_SRC sayHi.cpp sayHi.h)
-
-add_library(hello ${Hello_SRC})
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS 1)
+add_library(hello SHARED ${Hello_SRC})
