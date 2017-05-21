@@ -3,11 +3,11 @@ project(cmakeLibrary)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(HELLO_MAJOR_VERSION 0)
-set(HELLO_MINOR_VERSION 1)
-set(HELLO_PATCH_VERSION 0)
-set(HELLO_VERSION
-  ${HELLO_MAJOR_VERSION}.${HELLO_MINOR_VERSION}.${HELLO_PATCH_VERSION})
+set(HelloLibrary_MAJOR_VERSION 0)
+set(HelloLibrary_MINOR_VERSION 1)
+set(HelloLibrary_PATCH_VERSION 0)
+set(HelloLibrary_VERSION
+  ${HelloLibrary_MAJOR_VERSION}.${HELLO_MINOR_VERSION}.${HELLO_PATCH_VERSION})
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
@@ -22,7 +22,7 @@ add_subdirectory(src)
 
 
 
-export(TARGETS hello
+export(TARGETS HelloLibrary
   FILE "${PROJECT_BINARY_DIR}/HelloTargets.cmake")
 
-export(PACKAGE hello)
+export(PACKAGE HelloLibrary)
